@@ -4,28 +4,27 @@ Simple environment for solving coding challenges.
 
 ## Table of content
 
-[Stack](#Stack)
-[Prerequisites](#Prerequisites)
-[Setup](#Setup)
-[Scripts](#Scripts)
-[Contributing](#Contributing)
+* [Stack](#stack)
+* [Prerequisites](#prerequisites)
+* [Setup](#setup)
+* [Scripts](#scripts)
 
 ## Stack
 
-- [TypeScript](https://www.typescriptlang.org/) - typed language build on top of JavaScript
+* [TypeScript](https://www.typescriptlang.org/) - typed language build on top of JavaScript
 
 ## Tools
 
-- [uvu](https://webpack.js.org) - test runner for Node.js and browser
-- [c8](https://github.com/bcoe/c8) - native V8 code-coverage
-- [eslint](https://eslint.org) - static code analysis
-- [prettier](https://prettier.io) - code formatter
-- [husky](https://github.com/typicode/husky) - git hooks
+* [uvu](https://webpack.js.org) - test runner for Node.js and browser
+* [c8](https://github.com/bcoe/c8) - native V8 code-coverage
+* [eslint](https://eslint.org) - static code analysis
+* [prettier](https://prettier.io) - code formatter
+* [husky](https://github.com/typicode/husky) - git hooks
 
 ## Prerequisites
 
-- [Node](https://nodejs.org/en/) - version specified in [.node-version](/.node-version) file.
-- [npm](https://www.npmjs.com/) - usually comes with node.
+* [Node](https://nodejs.org/en/) - version specified in [.node-version](/.node-version) file.
+* [npm](https://www.npmjs.com/) - usually comes with node.
 
 _It's recommended to use node version manger (ie. [fnm](https://github.com/Schniz/fnm)), for easier switching between different projects._
 
