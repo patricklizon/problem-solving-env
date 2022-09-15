@@ -1,7 +1,7 @@
 import { test } from "uvu";
 import assert from "uvu/assert";
 
-import { flatten } from "../src/example";
+import { flatten } from "./example";
 
 test("returns unmodified flat array", () => {
   const array = [1, 2, 3, 4, 5, 6, 7];
