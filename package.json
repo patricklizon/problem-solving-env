@@ -9,7 +9,7 @@
     "postinstall": "husky install",
     "test": "uvu -r @swc-node/register --dir \"src/**/*.spec.ts$\"",
     "test:coverage": "c8 --clean --check-coverage --lines 95 --functions 95 --branches 95 npm test",
-    "test:watch": "watchlist src -- npm run test",
+    "test:watch": "watchlist --eager src -- npm run test",
     "test:format": "prettier --check \"src/**/*.ts\"",
     "test:lint": "eslint --ext=ts src",
     "test:types": "tsc -p tsconfig.json --noEmit --skipLibCheck",
