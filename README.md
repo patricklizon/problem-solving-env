@@ -23,7 +23,7 @@ Simple environment for solving coding challenges.
 
 ## Prerequisites
 
-* [Node](https://nodejs.org/en/) - version specified in [.node-version](/.node-version) file.
+* [Node](https://nodejs.org/en/) - version specified in [.nvmrc](/.nvmrc) file.
 * [npm](https://www.npmjs.com/) - usually comes with node.
 
 _It's recommended to use node version manger (ie. [fnm](https://github.com/Schniz/fnm)), for easier switching between different projects._
