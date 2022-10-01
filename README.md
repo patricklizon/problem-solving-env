@@ -19,7 +19,6 @@ Simple environment for solving coding challenges.
 * [c8](https://github.com/bcoe/c8) - native V8 code-coverage
 * [eslint](https://eslint.org) - static code analysis
 * [prettier](https://prettier.io) - code formatter
-* [husky](https://github.com/typicode/husky) - git hooks
 
 ## Prerequisites
 
