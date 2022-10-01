@@ -126,12 +126,16 @@
 
     // sonar
     "sonarjs/elseif-without-else": "error",
-    "sonarjs/no-inverted-boolean-check": "error",
-
-    // jest
-    "jest/valid-expect": "off"
+    "sonarjs/no-inverted-boolean-check": "error"
   },
   "overrides": [
+    // utils
+    {
+      "files": ["src/utils/**/*.ts"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      }
+    },
     // allow default export for configuration files
     {
       "files": ["*.[j|t]s"],
