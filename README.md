@@ -15,7 +15,8 @@ Simple environment for solving coding challenges.
 
 ## Tools
 
-* [uvu](https://webpack.js.org) - test runner for Node.js and browser
+* [uvu](https://github.com/lukeed/uvu) - test runner for Node.js and browser
+* [watchlist](https://github.com/lukeed/watchlist) - file watcher
 * [c8](https://github.com/bcoe/c8) - native V8 code-coverage
 * [eslint](https://eslint.org) - static code analysis
 * [prettier](https://prettier.io) - code formatter
