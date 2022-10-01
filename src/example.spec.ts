@@ -1,30 +1,26 @@
 import { test } from "uvu";
-import assert from "uvu/assert";
 
 import { flatten } from "./example";
+import { TestCases, runTestCases } from "./utils";
 
-test("returns unmodified flat array", () => {
-  const array = [1, 2, 3, 4, 5, 6, 7];
-  const actual = flatten(array);
-  const expected = [...array];
+test("flattens non empty array", () => {
+  const testCases: TestCases<typeof flatten> = [
+    [[[1, 2, 3, 4, 5, 6, 7]], [1, 2, 3, 4, 5, 6, 7]],
+    [[[1, [2, [3, [4, [5, [6, [7]]]]]]]], [1, 2, 3, 4, 5, 6, 7]],
+    [[[[], [[[1]]], [[]], [[[], [2]]]]], [1, 2]],
+  ];
 
-  assert.equal(actual, expected);
+  runTestCases(flatten, testCases);
 });
 
-test("flattens deeply nested array", () => {
-  const array = [1, [2, [3, [4, [5, [6, [7]]]]]]];
-  const actual = flatten(array);
-  const expected = [1, 2, 3, 4, 5, 6, 7];
+test("flattens empty array", () => {
+  const testCases: TestCases<typeof flatten> = [
+    [[[]], []],
+    [[[[[[[[[]]]]]]]], []],
+    [[[[], [[[]]], [[]], [[[], []]]]], []],
+  ];
 
-  assert.equal(actual, expected);
-});
-
-test("flattens empty arrays", () => {
-  const array = [[], [[[1]]], [[]], [[[], [2]]]];
-  const actual = flatten(array);
-  const expected: unknown[] = [1, 2];
-
-  assert.equal(actual, expected);
+  runTestCases(flatten, testCases);
 });
 
 test.run();
