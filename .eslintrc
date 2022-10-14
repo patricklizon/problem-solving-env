@@ -131,7 +131,7 @@
   "overrides": [
     // utils
     {
-      "files": ["src/utils/**/*.ts"],
+      "files": ["**/utils/**/*.ts"],
       "rules": {
         "@typescript-eslint/no-explicit-any": "off"
       }
