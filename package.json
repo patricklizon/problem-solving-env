@@ -1,15 +1,13 @@
 {
   "name": "problem-solving-env",
   "version": "0.0.1",
-  "description": "Environment for problem solving with TS and uvu",
+  "description": "Environment for problem solving with TS in a TDD way",
   "private": true,
   "scripts": {
     "fix:format": "npm run test:format -- --write",
     "fix:lint": "npm run test:lint -- --fix",
-    "postinstall": "husky install",
-    "test": "uvu -r @swc-node/register --dir \"src/**/*.spec.ts$\"",
-    "test:coverage": "c8 --exclude \"src/**/*.spec.ts\" --clean --check-coverage --lines 95 --functions 95 --branches 95 npm test",
-    "test:watch": "watchlist --eager src -- npm run test",
+    "test:run": "vitest run",
+    "test": "vitest",
     "test:format": "prettier --check \"src/**/*.ts\"",
     "test:lint": "eslint --ext=ts src",
     "test:types": "tsc -p tsconfig.json --noEmit --skipLibCheck",
@@ -18,18 +16,15 @@
   "author": "Patryk Lizoń",
   "license": "ISC",
   "devDependencies": {
-    "@swc-node/register": "^1.5.1",
     "@types/node": "^18.7.18",
     "@typescript-eslint/eslint-plugin": "^5.38.1",
     "@typescript-eslint/parser": "^5.38.1",
-    "c8": "^7.12.0",
     "eslint": "^8.23.1",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-sonarjs": "^0.15.0",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4",
-    "uvu": "^0.5.6",
-    "watchlist": "^0.3.1"
+    "vitest": "^0.24.1"
   }
 }

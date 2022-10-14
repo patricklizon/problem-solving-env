@@ -15,9 +15,7 @@ Simple environment for solving coding challenges.
 
 ## Tools
 
-* [uvu](https://github.com/lukeed/uvu) - test runner for Node.js and browser
-* [watchlist](https://github.com/lukeed/watchlist) - file watcher
-* [c8](https://github.com/bcoe/c8) - native V8 code-coverage
+* [vitest](https://vitest.dev/) - test framework
 * [eslint](https://eslint.org) - static code analysis
 * [prettier](https://prettier.io) - code formatter
 
@@ -46,9 +44,8 @@ Summary of defined npm scripts.
 
 | Script          | Description                   |
 | --------------- | ----------------------------- |
-| `test`          | run tests                     |
-| `test:coverage` | run tests and checks coverage |
-| `test:watch`    | run tests in watch mode       |
+| `test:run`      | run tests                     |
+| `test`          | run tests in watch mode       |
 | `test:types`    | validates TS types            |
 | `test:format`   | validates code formatting     |
 | `test:lint`     | validates linting rules       |
