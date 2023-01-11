@@ -1,23 +1,12 @@
-# problem-solving-env &middot;
+# problem-solving-env &middot; ![test workflow](https://github.com/patricklizon/problem-solving-env/actions/workflows/test.yml/badge.svg?event=push)
 
 Simple environment for solving coding challenges.
 
 ## Table of content
 
-* [Stack](#stack)
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
 * [Scripts](#scripts)
-
-## Stack
-
-* [TypeScript](https://www.typescriptlang.org/) - typed language build on top of JavaScript
-
-## Tools
-
-* [vitest](https://vitest.dev/) - test framework
-* [eslint](https://eslint.org) - static code analysis
-* [prettier](https://prettier.io) - code formatter
 
 ## Prerequisites
 
@@ -33,7 +22,7 @@ _It's recommended to use node version manger (ie. [fnm](https://github.com/Schni
 npm ci
 
 # Start tests in watch mode
-npm run test:watch
+npm run test
 ```
 
 ## Scripts
@@ -44,8 +33,8 @@ Summary of defined npm scripts.
 
 | Script          | Description                   |
 | --------------- | ----------------------------- |
-| `test:run`      | run tests                     |
 | `test`          | run tests in watch mode       |
+| `test:run`      | run tests once                |
 | `test:types`    | validates TS types            |
 | `test:format`   | validates code formatting     |
 | `test:lint`     | validates linting rules       |
