@@ -1,5 +1,7 @@
+import { describe, it } from "vitest";
+
 import { flatten } from "./example";
-import { TestCases, runTestCases } from "./utils";
+import { runTestCases, type TestCases } from "./utils";
 
 describe("#" + flatten.name, () => {
   it("flattens non empty array", () => {

@@ -39,6 +39,14 @@ Summary of defined npm scripts.
 | `test:format`   | validates code formatting     |
 | `test:lint`     | validates linting rules       |
 
+### Checks
+
+| Script          | Description                   |
+| --------------- | ----------------------------- |
+| `check:types`    | validates TS types            |
+| `check:format`   | validates code formatting     |
+| `check:lint`     | validates linting rules       |
+
 ### Fix
 
 | Script       | Description                |

@@ -2,7 +2,7 @@ import { UserConfigExport } from "vitest/config";
 
 const config: UserConfigExport = {
   test: {
-    globals: true,
+    globals: false,
     environment: "node",
   },
 };
