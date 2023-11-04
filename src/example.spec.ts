@@ -13,15 +13,15 @@ describe.each(solutions)("%s", (_, fn) => {
     [[[1, 2, 3, 4, 5, 6, 7]], [1, 2, 3, 4, 5, 6, 7]],
     [[[1, [2, [3, [4, [5, [6, [7]]]]]]]], [1, 2, 3, 4, 5, 6, 7]],
     [[[[], [[[1]]], [[]], [[[], [2]]]]], [1, 2]],
-  ])("flattens non empty array", (args, right) => {
-    expect(fn(...args)).to.deep.equal(right);
+  ])("flattens non empty array", (params, right) => {
+    expect(fn.apply(null, params)).to.deep.equal(right);
   });
 
   it.each<InputExpectedPairs>([
     [[[]], []],
     [[[[[[[[[]]]]]]]], []],
     [[[[], [[[]]], [[]], [[[], []]]]], []],
-  ])("flattens empty array", (args, right) => {
-    expect(fn(...args)).to.deep.equal(right);
+  ])("flattens empty array", (params, right) => {
+    expect(fn.apply(null, params)).to.deep.equal(right);
   });
 });
