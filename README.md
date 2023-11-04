@@ -11,13 +11,18 @@ Simple environment for solving coding challenges.
 ## Prerequisites
 
 * [Node](https://nodejs.org/en/) - version specified in [.nvmrc](/.nvmrc) file.
-* [npm](https://www.npmjs.com/) - usually comes with node.
+* [corepack](https://github.com/nodejs/corepack) - package manager that allows
+using correct version of the package manager without installing it.
 
-_It's recommended to use node version manger (ie. [fnm](https://github.com/Schniz/fnm)), for easier switching between different projects._
+_It's recommended to use node version manger
+(ie. [fnm](https://github.com/Schniz/fnm))_
 
 ## Setup
 
 ```sh
+# use correct node version
+fnm use
+
 # Install dependencies
 npm ci
 
@@ -35,9 +40,6 @@ Summary of defined npm scripts.
 | --------------- | ----------------------------- |
 | `test`          | run tests in watch mode       |
 | `test:run`      | run tests once                |
-| `test:types`    | validates TS types            |
-| `test:format`   | validates code formatting     |
-| `test:lint`     | validates linting rules       |
 
 ### Checks
 
