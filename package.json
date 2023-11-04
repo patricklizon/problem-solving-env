@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Environment for problem solving with TS in a TDD way",
   "private": true,
+  "packageManager": "npm@10.1.0",
   "scripts": {
     "fix:format": "npm run check:format -- --write",
     "fix:lint": "npm run check:lint -- --fix",
@@ -16,7 +17,7 @@
   "author": "Patryk Lizoń",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^18.16.18",
+    "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "^5.59.11",
     "@typescript-eslint/parser": "^5.59.11",
     "eslint": "^8.43.0",
